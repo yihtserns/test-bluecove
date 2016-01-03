@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.github.yihtserns</groupId>
+    <artifactId>test-bluecove</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <url>http://github.com/yihtserns/test-bluecove</url>
+    <issueManagement>
+        <url>http://github.com/yihtserns/test-bluecove/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git@github.com:yihtserns/test-bluecove.git</connection>
+        <developerConnection>scm:git:git@github.com:yihtserns/test-bluecove.git</developerConnection>
+        <url>git@github.com:yihtserns/test-bluecove.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>yihtserns</id>
+            <name>Sim Yih Tsern</name>
+            <email>sim_yihtsern@yahoo.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.ow2.chameleon.commons.bluecove</groupId>
+            <artifactId>bluecove</artifactId>
+            <version>2.1.1-63</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.sf.bluecove</groupId>
+                    <artifactId>bluecove</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+</project>
